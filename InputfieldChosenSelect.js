@@ -9,7 +9,10 @@ var initChosen = function() {
 	} else {
 		var options = config[oid]; 
 	}
-    if($t.not("[required]")) $t.children().first().text("");
+
+	if (!$t.hasClass("required") || $t.children().first().val() == "") {
+		$t.children().first().text("");
+	}
 
 	$t.chosen(options); 
 };
