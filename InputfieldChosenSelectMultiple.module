@@ -16,7 +16,7 @@
  *
  */
 
-class InputfieldChosenSelectMultiple extends InputfieldSelectMultiple implements InputfieldHasArrayValue{
+class InputfieldChosenSelectMultiple extends InputfieldSelectMultiple implements InputfieldHasArrayValue, InputfieldHasSortableValue {
 
 	protected $chosenOptions = array();
 	protected $supportedAdminThemes = array(
@@ -26,7 +26,7 @@ class InputfieldChosenSelectMultiple extends InputfieldSelectMultiple implements
 
 	public static function getModuleInfo() {
 		return array(
-			'title' => __('Inputfield Chosen Select Multiple', __FILE__), // Module Title
+			'title' => __('Chosen MultiSelect', __FILE__), // Module Title
 			'summary' => __('Inputfield for the ProcessWire FieldtypePage. Provides an alternative tagging interface.', __FILE__), // Module Summary
         'version' => 121,
 			);
