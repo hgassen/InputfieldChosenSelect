@@ -86,3 +86,17 @@
   background: #f0f3f7;
   box-shadow: none;
 }
+
+/* Style overrides */
+.InputfieldChosenSelect select, .InputfieldChosenSelectMultiple select {
+	visibility: hidden;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+	background-position: 10000px 100000px !important;
+}
+.chosen-container-multi .chosen-choices {
+  background-color: #fff !important;
+}
+.chosen-container-multi .chosen-choices li.search-choice  {
+  background-color: #f0f3f7 !important;
+}
